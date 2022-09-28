@@ -42,6 +42,12 @@ body {
 	display: block;
 }
 
+.slides:nth-child(3) {
+	animation-name: imagesAnimation;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in-out;
+}
+
 button {
 	background-color: transparent;
 	border: none;
@@ -65,7 +71,7 @@ i:hover {
 	transform: scale(0.9);
 }
 
-#box__balls {
+#box__buttons {
 	display: flex;
 	justify-content: center;
 	align-items: center;
