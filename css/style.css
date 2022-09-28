@@ -12,7 +12,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 100%;
+	height: 100vh;
 }
 
 #slider {
@@ -30,10 +30,9 @@ body {
 }
 
 .slides {
-	/* width: 100%; */
 	display: none;
-	height: 50px;
-	width: 50px;
+	height: 200px;
+	width: 180px;
 	background-color: white;
 	font-size: 2rem;
 	margin: 1rem;
@@ -46,7 +45,6 @@ body {
 button {
 	background-color: transparent;
 	border: none;
-	transition: all 0.1s ease-in-out;
 }
 
 i {
@@ -71,18 +69,23 @@ i:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/* margin-top: 1.5rem; */
 }
 
-.ball {
-	display: inline-flex;
-	height: 20px;
-	width: 20px;
-	background-color: grey;
-	border-radius: 50%;
-	margin: 1rem 5px;
+@keyframes imagesAnimation {
+	0% {
+	}
+
+	50% {
+		transform: scale3d(5px);
+		transform: scaLE(1.5);
+	}
+
+	100% {
+	}
 }
 
-.ball:nth-child(1) {
-	background-color: orange;
+.images-animation {
+	animation-name: imagesAnimation;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in-out;
 }
