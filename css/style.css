@@ -1,0 +1,88 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #444444;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+#slider {
+	width: 70%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#img__slider {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.slides {
+	/* width: 100%; */
+	display: none;
+	height: 50px;
+	width: 50px;
+	background-color: white;
+	font-size: 2rem;
+	margin: 1rem;
+}
+
+.slides:nth-child(-n + 5) {
+	display: block;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+	transition: all 0.1s ease-in-out;
+}
+
+i {
+	font-size: 50px;
+	color: white;
+	margin: 30px;
+}
+
+i:hover {
+	cursor: pointer;
+}
+
+#slider button:hover {
+	transform: scale(1.1);
+}
+
+#slider button:active {
+	transform: scale(0.9);
+}
+
+#box__balls {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* margin-top: 1.5rem; */
+}
+
+.ball {
+	display: inline-flex;
+	height: 20px;
+	width: 20px;
+	background-color: grey;
+	border-radius: 50%;
+	margin: 1rem 5px;
+}
+
+.ball:nth-child(1) {
+	background-color: orange;
+}
