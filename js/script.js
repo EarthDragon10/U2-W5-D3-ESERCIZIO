@@ -22,11 +22,13 @@ const nextImg = () => {
 	}
 };
 
-const playSlider = () => {
+function playSlider() {
 	return setInterval(nextImg, 1000);
-};
+}
 
-const stopSlider = () => {
-	clearInterval(playSlider);
-};
-console.log(corrente);
+// let varPlaySlider = setInterval(nextImg, 1000);
+
+// const stopSlider = () => {
+// 	clearInterval(varPlaySlider);
+// };
+// console.log(corrente);
